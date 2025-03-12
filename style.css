@@ -1,0 +1,109 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Breadcrumb Navigation Styling */
+nav {
+    font-size: 16px;
+    color: #777;
+    cursor: pointer;
+}
+
+nav span {
+    font-weight: bold;
+    color: black;
+}
+
+/* Main Image Container */
+.main-image {
+    position: relative;
+    text-align: center;
+}
+
+/* Main Product Image */
+.main-slide {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Navigation Buttons (Next & Prev) */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%; /* Circular buttons */
+}
+
+/* Positioning of Prev and Next Buttons */
+.prev-btn { 
+    left: 10px; 
+}
+.next-btn { 
+    right: 10px; 
+}
+
+/* Thumbnails Container */
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* Individual Thumbnail Styling */
+.thumbnails img {
+    flex: 1;
+    max-width: 24%; /* Ensuring 4 images fit in a row */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Active or Hovered Thumbnail Effect */
+.thumbnails img:hover, 
+.thumbnails img.active {
+    opacity: 0.7;
+}
+
+/* Product Title Styling */
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Pricing Section */
+.price {
+    font-size: 20px;
+    color: #d9534f; /* Bootstrap danger color */
+}
+
+/* Discount Label */
+.discount {
+    color: green;
+    font-weight: bold;
+}
+
+/* Icons Section */
+.icons {
+    font-size: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+/* Individual Icon Styling */
+.icons i {
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect on Icons */
+.icons i:hover {
+    color: green;
+}
